@@ -2,7 +2,7 @@
 
 <template>
 <div id="app" class="container">
-  App component
+  TurnOut
   <router-view></router-view>
 </div>
 </template>

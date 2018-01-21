@@ -24,3 +24,9 @@ body {
   color: #646446;
   margin: 60px;
 }
+.buttons{
+  margin: 5px;
+}
+.errorMessage{
+  color: #c62828;
+}
