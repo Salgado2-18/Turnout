@@ -3,7 +3,7 @@
 <template>
 
 <div id="dash" class="jumbotron form-inline">
-    <h3>Sign in.</h3>
+    <h3>Sign in</h3>
     <div class="form-group">
         <input type="text" placeholder="email" class="form-control" v-model="email" />
         <input type="password" placeholder="password" class="form-control" v-model="password" />
@@ -11,6 +11,7 @@
     <div class="buttons">
         <button class="btn btn-success" @click="signIn">Sign In</button>
         <br>
+        <router-link to="/signup">Already a user? Sign Up.</router-link>
         <br>
         <br>
         <br>
