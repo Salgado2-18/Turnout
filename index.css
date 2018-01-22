@@ -30,3 +30,11 @@ body {
 .errorMessage{
   color: #c62828;
 }
+.form{
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center;
+}
+.f1{
+  text-align: center;
+}

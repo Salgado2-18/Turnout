@@ -11,7 +11,9 @@
     <div class="buttons">
         <button class="btn btn-success" @click="signIn">Sign In</button>
         <br>
-        <router-link to="/signup">Already a user? Sign Up.</router-link>
+        <br>
+        <br>
+        <router-link to="/signup">Not a user? Sign Up.</router-link>
         <br>
         <br>
         <br>

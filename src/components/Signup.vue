@@ -10,6 +10,9 @@
     <br>
     <br>
     <br>
+    <router-link to="/signin">Already a user? Sign In.</router-link>
+    <br>
+    <br>
     <br>
     <p class="errorMessage">{{error.message}} </p>
     <br>
