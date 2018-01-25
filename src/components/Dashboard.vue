@@ -1,14 +1,17 @@
 
 
 <template>
-<div id="dash" class="jumbotron">
+<div id="dash" class="jumbotron" style="overflow-y: scroll; height:400px;">
   <h3> Events Dashboard</h3>
   <br>
   <hr>
   <AddEvents/>
   <hr>
-  <div>
-    {{$store.state}}
+  <div class="col-md-12">
+    <EventItem v-for="(event_item,index) in this.$store.state.events"
+    :event="event_item"
+    key="index"
+    />
   </div>
   <br>
   <div>
@@ -24,6 +27,7 @@ import {
 }
 from '../firebaseApp'
 import AddEvents from './AddEvents.vue'
+import EventItem from './EventItem.vue'
 export default {
   methods: {
     signOut() {
@@ -32,7 +36,8 @@ export default {
     }
   },
   components: {
-    AddEvents
+    AddEvents,
+    EventItem
   },
   mounted() {
     eventsRef.on('value', snap => {
@@ -40,7 +45,7 @@ export default {
       snap.forEach(event => {
         events.push(event.val())
       })
-      console.log('events', events)
+      this.$store.dispatch('setEvents', events)
     })
   }
 }

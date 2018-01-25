@@ -1,9 +1,10 @@
 body {
+  background-image: url('Picture6.jpg');
   background-repeat: no-repeat;
   background-position: right top;
   background-size: auto;
-  background-color: #3f51b5;
-  color: #fff;
+  background-color: #17113D;
+  color: #000;
   text-align: center;
 }
 
@@ -24,17 +25,18 @@ body {
   color: #646446;
   margin: 60px;
 }
-.buttons{
+
+.buttons {
   margin: 5px;
 }
-.errorMessage{
-  color: #c62828;
-}
-.form{
+
+.form {
   padding-left: 10%;
   padding-right: 10%;
   text-align: center;
 }
-.f1{
-  text-align: center;
+
+.eventCard {
+  border: 126px solid: #000;
+  border-radius: 5px;
 }
